@@ -4,7 +4,7 @@ const port = 8080; // GKE siempre expone el puerto que escucha el contenedor
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('¡Hola Mundo desde GKE con Node.js!\n');
+  res.end('¡Hola Mundo desde GKE con Node.js - by mcatalan !\n');
 });
 
 server.listen(port, () => {
