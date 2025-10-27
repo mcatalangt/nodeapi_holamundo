@@ -80,4 +80,4 @@ jobs:
           # Aplica el manifiesto actualizado a tu clúster
           kubectl apply -f deployment.yaml
           # Verifica el estado del rollout
-          kubectl rollout status deployment/${{ env.K8S_DEPLOYMENT_NAME }}
+          kubectl rollout status deployment/${{ env.K8S_DEPLOYMENT_NAME }} --timeout=5m
