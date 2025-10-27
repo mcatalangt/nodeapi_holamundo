@@ -2,6 +2,12 @@
 name: Node.js API CI/CD a GKE
 
 on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environment to deploy (dev, prod)"
+        required: true
+        default: dev
   push:
     branches:
       - main
